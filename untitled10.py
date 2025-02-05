@@ -3,6 +3,9 @@ import streamlit as st
 # Judul aplikasi
 st.title("⚡ Simulasi Prediksi Kejadian Petir")
 
+# Menambahkan logo di sidebar dari GitHub
+st.sidebar.image("logo stmkg.jpg", width=200)
+
 # Input untuk jam UTC kejadian yang ingin diprediksi
 st.subheader("🔹 Masukkan Jam Kejadian Petir (UTC)")
 
