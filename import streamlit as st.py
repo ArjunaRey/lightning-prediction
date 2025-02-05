@@ -8,7 +8,7 @@ st.title("Simulasi Prediksi Kejadian Petir 1 Jam ke depan⚡")
 suhu = st.number_input("Suhu Udara (°C)", min_value=-10.0, max_value=50.0, value=25.0, step=0.1)
 kelembaban = st.slider("Kelembaban Relatif (%)", min_value=0, max_value=100, value=50)
 tekanan = st.number_input("Tekanan QFE (hPa)", min_value=900.0, max_value=1100.0, value=1013.0, step=0.1)
-kecepatan_angin = st.number_input("Kecepatan Angin (km/h)", min_value=0.0, max_value=150.0, value=10.0, step=0.1)
+kecepatan_angin = st.number_input("Kecepatan Angin (m/s)", min_value=0.0, max_value=150.0, value=10.0, step=0.1)
 
 # Tombol prediksi
 if st.button("Prediksi Kejadian Petir"):
