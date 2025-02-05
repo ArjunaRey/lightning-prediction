@@ -7,7 +7,7 @@ st.title("⚡ Simulasi Prediksi Kejadian Petir")
 st.sidebar.image("logo stmkg.jpg", width=200)
 
 # Input untuk jam UTC kejadian yang ingin diprediksi
-st.subheader("🔹 Masukkan Jam Kejadian Petir (UTC)")
+st.subheader("🔹 Masukkan Jam Saat Ini (UTC)")
 
 jam_prediksi_utc = st.number_input("Jam Kejadian (UTC)", min_value=0, max_value=23, value=12, step=1)
 
@@ -50,7 +50,7 @@ st.write(f"Suhu: {suhu_2jam_lalu}°C, Kelembaban: {kelembaban_2jam_lalu}%, Tekan
 st.write(f"**Jam Prediksi Kejadian Petir (UTC):** {jam_prediksi_utc}:00")
 
 # Jika tombol prediksi ditekan, lakukan prediksi sederhana (misalnya menggunakan model dummy)
-if st.button("Prediksi Kejadian Petir"):
+if st.button("Prediksi Kejadian Petir 1 Jam ke depan"):
     # Contoh prediksi dummy: jika suhu saat ini lebih tinggi dan kelembaban lebih tinggi, maka petir lebih mungkin
     if suhu_sekarang > suhu_2jam_lalu and kelembaban_sekarang > kelembaban_2jam_lalu:
         st.success("⚡ Prediksi: Petir Mungkin Terjadi!")
